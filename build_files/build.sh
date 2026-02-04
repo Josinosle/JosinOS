@@ -6,7 +6,7 @@ set -ouex pipefail
 
 # Fedora repo packages
 dnf5 install -y niri nautilus ptyxis tuned flatpak
-dnf5 remove -y sway dunst thunar firefox swaylock swayidle
+dnf5 remove -y sway dunst thunar firefox swaylock swayidle plymouth
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
