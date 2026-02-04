@@ -5,12 +5,13 @@ set -ouex pipefail
 ### Install packages
 
 # Fedora repo packages
-dnf5 install -y niri nautilus ptyxis tuned flatpak
-dnf5 remove -y sway dunst thunar firefox swaylock swayidle
+dnf5 install -y niri nautilus ptyxis tuned flatpak generic-logos generic-release
+dnf5 remove -y sway dunst thunar firefox swaylock swayidle fedora-logos fedora-release
 
 # Flatpak packages
 flatpak remote-add --if-not-exists flathub https://dl.flathub.org/repo/flathub.flatpakrepo
 flatpak install -y flathub org.mozilla.firefox
+
 # Copr packages
 dnf5 -y copr enable solopasha/hyprland 
 dnf5 -y install hyprlock hypridle
