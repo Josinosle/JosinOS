@@ -19,3 +19,4 @@ dnf5 -y install hyprlock hypridle
 ### Example for enabling a System Unit File
 
 systemctl enable tuned.service
+systemctl enable sddm.service

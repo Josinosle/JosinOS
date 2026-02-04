@@ -1,0 +1,8 @@
+NAME="JosinOS"
+RELEASE_TYPE=stable
+ID=josinos
+PRETTY_NAME="JosinOS"
+ANSI_COLOR="0;38;2;60;110;180"
+LOGO=fedora-logo-icon
+CPE_NAME="cpe:/o:fedoraproject:fedora:43"
+DEFAULT_HOSTNAME="josinos"
