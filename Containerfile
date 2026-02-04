@@ -3,7 +3,7 @@ FROM scratch AS ctx
 COPY build_files /
 
 # Base Image
-FROM quay.io/fedora/fedora-sericea:stable
+FROM quay.io/fedora/fedora-sericea:43
 
 ## Other possible base images include:
 # FROM ghcr.io/ublue-os/bazzite:latest
