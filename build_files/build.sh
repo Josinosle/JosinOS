@@ -5,7 +5,11 @@ set -ouex pipefail
 ### Install packages
 
 # Fedora repo packages
+<<<<<<< HEAD
 dnf5 install -y niri nautilus ptyxis tuned flatpak
+=======
+dnf5 install -y niri nautilus ptyxis tuned flatpak lightdm lightdm-gtk-greeter xwayland-satellite
+>>>>>>> fc7541910cbd80db4bf9884dd2aa76a274d98446
 dnf5 remove -y sway dunst thunar firefox swaylock swayidle plymouth
 
 # Flatpak packages
@@ -19,4 +23,8 @@ dnf5 -y install hyprlock hypridle
 ### Example for enabling a System Unit File
 
 systemctl enable tuned.service
+<<<<<<< HEAD
 systemctl enable sddm.service
+=======
+systemctl enable lightdm.service
+>>>>>>> fc7541910cbd80db4bf9884dd2aa76a274d98446
