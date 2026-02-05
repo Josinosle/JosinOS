@@ -6,7 +6,8 @@ enable = [
   "org.fedoraproject.Anaconda.Modules.Timezone",     # Time/timezone
   "org.fedoraproject.Anaconda.Modules.Localization", # Keyboard/language
   "org.fedoraproject.Anaconda.Modules.Security",     # SELinux, security policies
-  "org.fedoraproject.Anaconda.Modules.Services"      # systemd services
+  "org.fedoraproject.Anaconda.Modules.Services",      # systemd services
+  "org.fedoraproject.Anaconda.Modules.Runtime"      
 ]
 disable = [
   "org.fedoraproject.Anaconda.Modules.Subscription"  # Not needed unless RHEL
