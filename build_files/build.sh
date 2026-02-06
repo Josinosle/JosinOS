@@ -16,7 +16,11 @@ flatpak install -y flathub org.mozilla.firefox
 dnf5 -y copr enable solopasha/hyprland
 dnf5 -y install hyprlock hypridle
 
+dnf5 -y copr enable avengemedia/dms
+dnf5 -y install dms
+
 ### Example for enabling a System Unit File
 
 systemctl enable tuned.service
 systemctl enable sddm.service
+systemctl --user add-wants niri.service dms
