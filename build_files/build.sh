@@ -23,4 +23,4 @@ dnf5 -y install dms
 
 systemctl enable tuned.service
 systemctl enable sddm.service
-systemctl --user add-wants niri.service dms
+#systemctl --user add-wants niri.service dms
